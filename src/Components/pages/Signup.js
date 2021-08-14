@@ -32,6 +32,7 @@ export default function Signup() {
         setName('');
         setPass('');
         setError(error.message);
+        console.log(error);
       })
     });
   };

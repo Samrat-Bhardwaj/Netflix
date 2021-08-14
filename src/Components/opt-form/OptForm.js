@@ -1,5 +1,6 @@
 import React from 'react'
 import {Container, Input,Button,Text,Break} from "./styles/styles"
+import { Link } from 'react-router-dom'
 
 export function OptForm({children,...restProps}) {
     return (
@@ -12,7 +13,7 @@ OptForm.Input = function OptForm({...restProps}){
 }
 
 OptForm.Button = function OptFormButton({children,...restProps}){
-    return <Button {...restProps}>
+    return <Button {...restProps} to="/signup">
         {children} <img src="/images/icons/chevron-right.png" alt="Try Now"></img>
     </Button>
 }
